@@ -1,0 +1,547 @@
+/* css reset */
+
+*{
+    font-family: 'poppins';
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.nav__list a{
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.nav__list i{
+    width: 20px;
+    height: 20px;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+}
+
+header{
+    width: 100%;
+    background-color: #0C2D57;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+.nav__list{
+    display: flex;
+    gap: 1.7rem;
+}
+
+header.sticky{
+    backdrop-filter: blur(35px);
+    padding: 27px;
+    box-shadow: 0px 2px 3px #000
+}
+
+#menu-icon{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-size: 30px;
+    display: none;
+}
+section.sulteng{
+    min-height: 100vh;
+    padding-top: 9rem;
+    background-color: #18A0FB;
+    display:flex ;
+    justify-content: center;
+}
+
+.sulteng-content{
+    max-width: 800px;
+    padding: 30px;
+}
+
+.sulteng-content h1{
+    color: #fff;
+    font-size: 7.5rem;
+    text-align: center;
+}
+
+.sulteng-content p{
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+section.bawa-diri{
+    padding: 100px;
+}
+
+.bawa-diri-teks{
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.bawa-diri-teks h3{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+
+.bawa-diri-opsi{
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.box{
+    text-align: center;
+}
+
+.box i{
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+.bawa-diri-opsi .box{
+    max-width: 250px;
+    padding: 20px;
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255) 11%,rgb(255, 194, 194) 85%);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.box h4{
+    margin-bottom: 20px;
+}
+
+.box p{
+    margin-bottom: 20px;
+}
+
+section.sejarah-sulawesi{
+    background-image: url(img/sejarah-background.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.sejarah-content{
+    color: #fff;
+    text-align: center;
+}
+
+.sejarah-content h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.sejarah-content p{
+    font-size: 2.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.sejarah-content .sejarah-btn{
+    color: #000;
+    background-color: #fff;
+    padding: 7px 20px;
+    border-radius: 1.4rem;
+}
+
+.acara{
+    padding: 60px;
+    background-color: #18A0FB;
+}
+
+.acara h3{
+    color: #fff;
+    font-size: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.box-luar{
+    width: 70%;
+    /* height: 300px; */
+    background-image: linear-gradient(to right,rgb(254, 119, 81) 41%,rgb(57, 206, 255) 94%);
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    border-radius: 2rem;    
+    margin-bottom: 2rem;
+}
+
+.box-teks .teks-atas h4{
+    font-size: 1.1rem;
+    margin: 30px 0;
+}
+
+.box-teks .teks-bawah p{
+    font-size: 1.2rem;
+    line-height: 35px;
+}
+
+.box-teks .teks-atas{
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-kecil .gambar{
+    width: 275px;
+    height: 275px;
+    border-radius: 2rem;
+}
+
+.box-kecil .gambar img{
+    width: 100%;
+    height: 275px;
+    border-radius: 2rem;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.75);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* maka a responsive */
+@media (max-width:1250px){
+    .box-teks .teks-atas h4{
+        margin: 20px 0;
+    }   
+
+    .box-teks .teks-bawah p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:1083px) {
+    
+    .box-kecil{
+        margin: 0 auto;
+
+    }
+    
+    .box-luar{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .box-kecil{
+        margin-top: 15px;
+    }
+    
+    .box-luar{
+        max-width: 550px;
+        
+    }
+}
+
+@media (max-width:945px) {
+    header{
+        padding: 14px;
+    }
+    .nav__list a{
+        font-size: 1.1rem;
+    }
+    .nav__list i{
+        font-size: 17px;
+    }
+
+    .sulteng-content h1{
+        font-size: 6.5rem;
+    }
+
+    .sulteng-content p{
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+
+    .bawa-diri-opsi{
+        justify-items: center;
+    }
+
+    .sejarah-content h3{
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .sejarah-content p{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width:700px){
+    header{
+        justify-content: space-between;
+    }
+    .nav__list{
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        background-color: #0C2D57;
+        padding: 20px;
+        margin-top:5.8rem ;
+        transition: all .7s ease-in;
+    }
+
+    .nav__list a{
+        font-size: 1.3rem;
+    }
+
+    .nav__list a:hover{
+        border-bottom: 2px solid #fff;
+    }
+    #menu-icon{
+        display: block  ;
+        z-index: 10;
+    }
+
+    .nav__list.show{
+        right: 0;
+        transition: all .7s;
+    }
+
+    .sulteng-content h1{
+        font-size: 5.8rem;
+    }
+
+    .sulteng-content p{
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+    .bawa-diri-opsi{
+        justify-items: center;
+    }
+
+    .sejarah-content h3{
+        font-size: 1.8rem;
+    }
+    .sejarah-content p{
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width:590px){
+    .acara{
+        padding: 30px;
+    }
+}
+
+@media (max-width:510px){
+    .acara{
+        padding: 0;
+    }
+}
+
+@media (max-width:485px){
+    .box-kecil .gambar{
+        width: 220px;
+        height: 220px;
+    }
+
+    .box-kecil .gambar img{
+        height: 220px;
+    }
+}
+
+
+
+@media(max-width:480px){
+
+    .sulteng-content h1{
+        font-size: 4.6rem;
+    }
+
+    .sulteng-content p{
+        font-size: .7rem;
+        line-height: 1.2rem;
+    }
+
+    .sulteng-content{
+        padding: 10px;
+    }
+    section.bawa-diri{
+        padding: 30px;
+    }
+    .bawa-diri-teks h3{
+        font-size: 1.2rem;
+    }
+
+    .box{
+        margin: 0 auto;
+    }
+
+
+
+}
+
+@media (max-width:390px){
+    .box-luar{
+        padding: 20px;
+    }
+
+    .box-teks .teks-atas{
+        flex-direction: column;
+    }
+
+    .box-teks .teks-atas h4{
+        font-size: .9rem;
+        margin: 10px 0;
+    }   
+
+    .box-teks .teks-bawah p{
+        font-size: .8rem;
+    }
+
+    .box-kecil .gambar{
+        width: 180px;
+        height: 180px;
+    }
+
+    .box-kecil .gambar img{
+        height: 180px;
+    }
+}
+
+
+@media(max-width:380px){
+
+    .bawa-diri-teks{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .bawa-diri-opsi{
+        grid-template-columns: repeat(auto-fit,minmax(230px,auto));
+    }
+
+    .bawa-diri-teks h3{
+        font-size: .9rem;
+        max-width: 200px;
+    }
+
+    .bawa-diri-opsi .box{
+        max-width:220px;
+    }
+
+    .bawa-diri-opsi{
+        text-align: center;
+    }
+
+    .box i{
+        font-size: 1.5rem;
+    }
+
+    .box p{
+        font-size: .8rem;
+    }
+
+    .sejarah-content h3{
+        font-size: 1rem;
+    }
+    .sejarah-content p{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (max-width:350px){
+    .bawa-diri-opsi{
+        padding: 0;
+    }
+}
+
+@media (max-width:320px){
+    .sulteng-content h1{
+        font-size: 3rem;
+    }
+
+    .sulteng-content p{
+        font-size: .5rem;
+        line-height: .9rem;
+    }
+
+    .bawa-diri-opsi{
+        grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    }
+
+    .box-kecil .gambar{
+        width: 130px;
+        height: 130px;
+    }
+
+    .box-kecil .gambar img{
+        height: 130px;
+    }
+
+}
+
+
+
+
+
+/* acara */
+
+
+
+
+
+
+
+
+

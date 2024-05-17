@@ -32,6 +32,7 @@ header{
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    z-index: 99;
 }
 
 .nav__list{
@@ -51,6 +52,7 @@ header.sticky{
     align-items: center;
     font-size: 30px;
     display: none;
+    z-index: 100;
 }
 section.sulteng{
     min-height: 100vh;
@@ -192,6 +194,7 @@ section.sejarah-sulawesi{
 .box-teks .teks-bawah p{
     font-size: 1.2rem;
     line-height: 35px;
+    margin-right: 15px;
 }
 
 .box-teks .teks-atas{
@@ -214,8 +217,7 @@ section.sejarah-sulawesi{
 }
 
 section.tari{
-    padding: 2rem;
-    margin-top: 1rem;
+    padding:2rem;
     background-image: url(img/tari-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -263,7 +265,6 @@ section.tari{
     position: absolute;
     bottom: 7%;
     color: #fff;
-    /* right: 50%; */
     font-size: 2rem;
 }
 
@@ -315,11 +316,13 @@ section.tari{
 /* maka a responsive */
 @media (max-width:1250px){
     .box-teks .teks-atas h4{
-        margin: 20px 0;
+        margin-top: 20px;
+        margin-bottom: 5px;
     }   
 
     .box-teks .teks-bawah p{
         font-size: 1rem;
+        padding: 5px;
     }
 }
 
@@ -340,8 +343,16 @@ section.tari{
     }
     
     .box-luar{
-        max-width: 550px;
-        
+        max-width: 550px;    
+    }
+
+    .box-teks .teks-atas h4{
+        margin-left: 10px;
+    }
+
+    .box-teks .teks-bawah p{
+        line-height: 30px;
+        padding: 10px;
     }
 }
 
@@ -557,6 +568,10 @@ section.tari{
     }
     .sejarah-content p{
         font-size: 1rem;
+    }
+
+    .box-teks .teks-bawah p{
+        line-height: 25px;
     }
 
 

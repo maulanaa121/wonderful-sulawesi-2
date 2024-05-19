@@ -278,13 +278,66 @@ section.tari{
     margin-top: 2rem;
 }
 
+/* destinasi */
+
+section.destinasi{
+    background: linear-gradient(to bottom,rgb(52, 194, 255) 31%,rgb(255, 255, 255) 75%);
+    padding-top: 1.5rem ;
+    padding-bottom: 3rem;
+}
+
+section.destinasi h3{
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
 
+.destinasi-img{
+    width: 540px;
+    border-radius: 2rem; 
+}
+.destinasi-img img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.destinasi-content{
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.destinasi-teks{
+    padding: 1.8rem;
+    position: relative;
+}
+
+.destinasi-teks h2{
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.destinasi-teks p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    word-spacing: 5px;
+}
 
 
-
-
-
+.destinasi-btn{
+    padding: .7rem 2.4rem;
+    background-color: #0C2D57;
+    color: #fff;
+    border-radius: 3rem;
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    outline: none;
+}
 
 
 
@@ -324,6 +377,11 @@ section.tari{
         font-size: 1rem;
         padding: 5px;
     }
+
+    .destinasi-img{
+        width: 440px;
+    }
+
 }
 
 @media (max-width:1083px) {
@@ -354,6 +412,24 @@ section.tari{
         line-height: 30px;
         padding: 10px;
     }
+
+    .destinasi h3{
+        font-size: 1.8rem;
+    }
+    
+    .destinasi h2{
+        font-size: 2.5rem;
+    }
+
+    .destinasi p{
+        font-size: 1.4rem;
+        word-spacing: 2px;
+    }
+
+    .destinasi-img{
+        width: 400px;
+    }
+
 }
 
 @media (max-width:945px) {
@@ -388,6 +464,32 @@ section.tari{
 
     .sejarah-content p{
         font-size: 1.3rem;
+    }
+
+    .destinasi h3{
+        font-size: 1.1rem;
+    }
+
+    .destinasi-teks{
+        padding-top: 8px;
+    }
+
+    .destinasi h2{
+        font-size: 2.1rem;
+    }
+
+    .destinasi p{
+        font-size: 1.2rem;
+        word-spacing: 1.5px;
+    }
+
+    .destinasi-img{
+        width: 350px;
+    }
+
+    .destinasi-btn{
+        padding:.5rem 2.2rem;
+        font-size: 15px;
     }
 
 }
@@ -445,6 +547,24 @@ section.tari{
         font-size: 1.1rem;
     }
 
+    .destinasi-content{
+        grid-template-columns: 1fr
+    }
+
+    .destinasi-img{
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    .destinasi-button{
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+
+    .destinasi-btn{
+        position: unset;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width:590px){
@@ -497,6 +617,14 @@ section.tari{
         margin: 0 auto;
     }
 
+    .destinasi h3{
+        font-size: .9rem;
+    }
+
+    .destinasi-img{
+        max-width: 300px;
+    }
+
 
 
 }
@@ -527,6 +655,11 @@ section.tari{
     .box-kecil .gambar img{
         height: 180px;
     }
+
+    .destinasi h2{
+        font-size: 1.9rem;
+    }
+
 }
 
 
@@ -574,12 +707,28 @@ section.tari{
         line-height: 25px;
     }
 
+    .destinasi-content{
+        padding: 0;
+    }
 
+    section.destinasi{
+        padding-top: .5rem;
+    }
+    
+    .destinasi h3{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: .8rem;
+    }
+    
 }
 
 @media (max-width:350px){
     .bawa-diri-opsi{
         padding: 0;
+    }
+    .destinasi-img{
+        width: 250px;
     }
 }
 
@@ -605,6 +754,11 @@ section.tari{
     .box-kecil .gambar img{
         height: 130px;
     }
+
+    .destinasi-img{
+        width: 200px;
+    }
+
 
 }
 

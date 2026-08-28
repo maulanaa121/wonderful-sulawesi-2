@@ -32,6 +32,8 @@
 
 <body>
 
+    @include('partials.Navbar')
+
 <div class="min-h-screen bg-gray-50">
 
     <div class="flex min-h-screen items-center justify-center">

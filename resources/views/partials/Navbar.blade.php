@@ -19,7 +19,7 @@
                     <button
                         class="flex items-center gap-2 text-white font-poppins text-[20px] font-medium hover:text-cyan-300 transition"
                     >
-                        Destinasi
+                        Destinasi Wisata
                         <i data-lucide="chevron-down" class="w-5 h-5"></i>
                     </button>
 

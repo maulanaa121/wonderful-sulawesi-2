@@ -52,7 +52,7 @@
             <button
                 class="font-poppins mt-6 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700">
 
-                Mulai Sekarang
+                Jelajah Sekarang
 
                 <i data-lucide="arrow-right" class="h-5 w-5"></i>
 
